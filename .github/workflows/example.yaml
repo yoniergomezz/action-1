@@ -11,4 +11,4 @@ jobs:
           uses: actions/checkout@v4
 
         - name: Welcome to my firts job
-          run: echo Hi, i am $(whoami) from my firts job and my pass is: ${{ secrets.DOCKERPASS }}
+          run: "echo Hi, i am $(whoami) from my firts job and my pass is: ${{ secrets.DOCKERPASS }}"
