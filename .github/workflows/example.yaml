@@ -6,7 +6,11 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-        - name: Welcome
+
+        - name: Copy my repo
+          uses: actions/checkout@v4
+
+        - name: Welcome to my firts job
           run: echo "Hi, i am $(whoami) from my firts job"
 
         - name: List folders
