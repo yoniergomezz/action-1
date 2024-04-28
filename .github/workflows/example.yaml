@@ -1,0 +1,16 @@
+name: firs workflow lab
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome
+          run: echo "Hi, i am $whoami from my firts job"
+
+        - name: List folders
+          run: ls -l
+
+        - name: Read file README
+          run: cat README.md
