@@ -31,10 +31,10 @@ jobs:
 
       - name: List artifact
         run: ls
-        
-    # third_job:
-    #   needs: second_job
-    #   runs-on: ubuntu-latest
-    #   steps:
-    #   - name: Read file
-    #     run: cat filepro.txt
+
+    third_job:
+      needs: second_job
+      runs-on: ubuntu-latest
+      steps:
+      - name: Read file
+        run: ls
