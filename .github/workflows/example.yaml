@@ -1,4 +1,5 @@
 name: firs workflow lab
+run-name: ${{ github.actor }} is learning GitHub Actions
 
 on: push
 
