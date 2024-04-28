@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Welcome
-          run: echo "Hi, i am $whoami from my firts job"
+          run: echo "Hi, i am $(whoami) from my firts job"
 
         - name: List folders
           run: ls -l
